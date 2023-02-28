@@ -14,10 +14,9 @@ const collectiveKnowledge = {
 }
 
 const generateMessage = () => {
-
-    const emotion = collectiveKnowledge.emotion[randomNumber(collectiveKnowledge.emotion.length - 1)]
-    const level = collectiveKnowledge.level[randomNumber(collectiveKnowledge.level.length - 1)]
-    const subject = collectiveKnowledge.subject[randomNumber(collectiveKnowledge.subject.length - 1)]
+    const emotion = collectiveKnowledge.emotion[randomNumber(collectiveKnowledge.emotion.length)]
+    const level = collectiveKnowledge.level[randomNumber(collectiveKnowledge.level.length)]
+    const subject = collectiveKnowledge.subject[randomNumber(collectiveKnowledge.subject.length)]
 
     return `I sense ${emotion} in your ${subject}, ${level}.`;
 }
